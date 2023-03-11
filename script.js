@@ -96,7 +96,9 @@ hamburger.addEventListener('click',()=>{
     closeButton.innerText = 'X'
     navMobile.classList.add('mobile-div')
     navMobile.id = 'nav-mobile-id'
-    navMobile.appendChild(closeButton)
+    setTimeout(()=>{
+        document.body.appendChild(closeButton)
+    },200)
     navSection.appendChild(navMobile)
     changeContent(navMobile,'object',null,'mobile-main')
     let subcategoriesArr = document.getElementsByClassName('subcategory-mobile-main')

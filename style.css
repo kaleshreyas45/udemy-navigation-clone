@@ -219,10 +219,10 @@ input{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    left: 295px;
+    position: relative;
+    left: 285px;
     top:10px;
-    z-index: 10;
+    z-index: 30;
     border: none;
     font-weight: 600;
     font-size: 1.2rem;
@@ -297,7 +297,7 @@ input{
     }
 }
 @media (min-width:800px){
-    .mobile-div, .overlay{
+    .mobile-div, .overlay,.close-button{
         display: none;
     }
 }
